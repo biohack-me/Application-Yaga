@@ -122,3 +122,12 @@ ul.StatsOverview li strong {
    line-height: 1;
    color: #222;
 }
+
+.Leaderboard-User .Username {
+   display: inline-block;
+   width: 100px !important;
+   max-width: 100px !important;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}

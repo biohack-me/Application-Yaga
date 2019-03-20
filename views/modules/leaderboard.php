@@ -13,8 +13,10 @@ foreach($this->Data as $Leader) {
   echo '<li>'
   .'<span class="Leaderboard-User"><img src="'.userPhotoUrl($Leader).'" class="ProfilePhoto ProfilePhotoSmall"> <span class="Username">'
   .userAnchor($Leader)
+  .'</span>'
   .Wrap(Wrap(Plural($Leader->YagaPoints, '%s Point', '%s Points'), 'span', array('class' => 'Count')),'span', array('class' => 'Aside'))
-  .'</span></span> </li>';
+  .'</span>'
+  .' </li>';
 
 }
 echo '</ul>';
